@@ -1,0 +1,127 @@
+# 基本了解要求
+'''
+标题，副标题
+书签
+标签
+目录导航
+强调：斜体，粗体，删除线，下划线
+段落与分割：水平分割线，普通段落
+强制换行
+网页链接：连接的快速定义，emial链接,图片链接
+列表：有序列表，无序列表，多重列表
+引用：文字引用，多层引用
+添加影像附件：图片插入，图片链接定义
+代码块： 内联代码，多行代码块
+'''
+
+# 与html的联系
+'''
+HTML 的区段（行内）标签如 <span>、<cite>、<del>
+可以在 Markdown 的段落、列表或是标题里随意使用
+
+Markdown 让你可以自然地书写字符，需要转换的由它来处理好了。
+如果你使用的 & 字符是 HTML 字符实体的一部分，
+它会保留原状，否则它会被转换成 &amp;
+
+code 范围内，不论是行内还是区块， < 和 & 两个符号都一定会被转换成 HTML 实体
+，这项特性让你可以很容易地用 Markdown
+写 HTML code （和 HTML 相对而言， HTML 语法中，
+你要把所有的 < 和 & 都转换为 HTML 实体，
+才能在 HTML 文件里面写出 HTML code。
+'''
+
+# 内容
+'''
+标题: =, -
+实例：
+This is an H1
+=
+This is an H2
+-
+
+标头：#， #######
+实例：
+# 这是 H1
+## 这是 H2
+
+区块：>
+实例：
+> This is a blockquote with two paragraphs.
+  consectetuer adipiscing elit.
+
+区块嵌套: > >
+实例:
+> This is the first level of quoting.
+>
+> > This is nested blockquote.
+>
+> Back to the first level.
+
+
+列表：*, +, -
+实例：
+* RED
+* Green
+* Blue
+
+-   Red
+-   Green
+-   Blue
+
++   Red
++   Green
++   Blue
+
+
+链接： []
+实例：
+This is [an example](http://example.com/ "Title") inline link.
+[This link](http://example.net/) has no title attribute.
+
+如果你是要链接到同样主机的资源，你可以使用相对路径：
+See my [About](/about/) page for details.
+
+参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：
+This is [an example][id] reference-style link.
+链接内容定义的形式为：
+
+    方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字
+    接着一个冒号
+    接着一个以上的空格或制表符
+    接着链接的网址
+    选择性地接着 title 内容，可以用单引号、双引号或是括弧包着
+
+下面这三种链接的定义都是相同：
+
+[foo]: http://example.com/  "Optional Title Here"
+[foo]: http://example.com/  'Optional Title Here'
+[foo]: http://example.com/  (Optional Title Here)
+
+
+强调：**，__,
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+等价于：
+<em>single asterisks</em>
+
+<em>single underscores</em>
+
+<strong>double asterisks</strong>
+
+<strong>double underscores</strong>
+
+代码：<code>,<kbd>,<pre>,``,
+
+图片：
+![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "Optional title"
+详细叙述如下：
+一个惊叹号 !
+接着一个方括号，里面放上图片的替代文字
+接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的 'title' 文字。
+
+转移符: \
+'''
+
